@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+		<head>
+			<title>booleans by Slice</title>
+	</head>
+	<body>
+		<script>
+      /*
+      true
+      false
+
+      console.log(3 < 5)
+      console.log(3 > 5)
+
+      console.log(5 == '5.00') //== converts the string 5.00 then compares it to the number 5
+
+      console.log(5 === '5.00') //===doesnt covert, it compares as is.
+
+      if (true) {
+        console.log('hello')
+      } else{
+        console.log('selaelo')
+      }
+
+      if (false) {
+        console.log('hello')
+      } //code not gonna run coz its false
+      else{
+        console.log('selaelo')
+      } //else code is running coz if is false
+
+      //checking if someone is old enought to drive
+       
+
+    if (30 >= 16) {
+      console.log('You can drive.')
+    }else{
+      console.log('You can not drive.')
+    } //will result in can drive because if statement is true
+
+    if (15 >= 16) {
+      console.log('You can drive.')
+      console.log('Congradulatios!')
+    }else{
+      console.log('You can not drive.')
+    } //will result in cannot drive becase if statement is false
+
+    if (15 >= 16) {
+      console.log('You can drive.')
+    }else if (15 >= 14)
+     {
+      console.log('Almost there!')
+    } else{
+      console.log('You can not drive.')
+    } 
+
+    if (15 >= 16) {
+      console.log('You can drive.')
+      console.log('Congradulatios!')
+    }else{
+      console.log('You can not drive.')
+    } //will result in cannot drive becase if statement is false
+
+
+    //practice using variables
+    const age = 15;
+
+    if (age >= 16) {
+      console.log('You can drive.')
+    }else if (age >= 14)
+     {
+      console.log('Almost there!')
+    } else{
+      console.log('You can not drive.')
+    } 
+    */
+
+   /*
+    console.log(true && true)
+
+    console.log(true && false)
+
+    console.log(0.2 >= 0 && 0.2 < 1 / 3) //both sides are true so the code will appear as true
+
+    console.log(true || false) //checks for a true side
+
+    console.log(!true) //flips the boolean to the opposite (not operator the ! stands for not)
+  */
+/*
+    if (5) {
+      console.log('truthy')
+    } //5 becomes a truthy value coz it behaves as true
+
+    if (0) {
+      console.log('truthy')
+    } 
+
+    const cartQuantity = 5;
+    
+    if (cartQuantity){
+      console.log('cart has products')
+    }
+
+    console.log(!0)
+
+    console.log('text' / 5) //will show NaN because the math is invalid
+
+    let variable1
+    console.log(variable1) //will show undefined because theres no variable saved
+    */
+
+    true ? 'truthy' : 'falsy' //the ? acts as if and the : acts as else
+    const result = true ? 'truthy' : 'falsy'
+    console.log(result)
+    
+    const outcome = 0 ? 'truthy' : 'falsy'
+    console.log(outcome)
+
+    false && console.log('hello')
+
+    const message = false && 'hello'; //stops at false
+    console.log(message)
+
+    const currency = 'EUR' || 'USD';// || stops at the first true
+    console.log(currency)
+
+    const curRency = undefined || 'USD'; 
+    console.log(curRency)
+
+
+    </script>
+	</body>
+</html>  

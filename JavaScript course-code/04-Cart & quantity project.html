@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+		<head>
+			<title>cart/qty project by Slice</title>
+	</head>
+	<body>
+    <button onclick="
+      console.log(`Cart Quantity: ${cartQuantity}`);
+      ">Show Quantity</button> 
+
+    <button onclick="
+    //cartQuantity = cartQuantity + 1;
+    cartQuantity++;
+    //cartQuantity += 1;
+    console.log(`Cart Quantity: ${cartQuantity}`)
+    ">Add to Cart</button>
+
+    <button onclick="
+    //cartQuantity = cartQuantity + 2; //longer version
+    cartQuantity += 2; //(shorter version)
+    console.log(`Cart Quantity: ${cartQuantity}`);
+    ">+2</button>
+
+    <button onclick="
+    cartQuantity = cartQuantity + 3;
+    console.log(`Cart Quantity: ${cartQuantity}`)
+    ">+3</button>
+
+    <button onclick="
+    cartQuantity = 0;
+    console.log('Cart was Reset');
+    console.log(`Cart Quantity: ${cartQuantity}`)
+    ">Reset Cart</button>
+
+		<script>
+			cartQuantity = 0;
+
+
+		</script>
+
+
+	</body>
+</html>  
