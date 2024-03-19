@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+		<head>
+			<title>objects activity by Slice</title>
+	</head>
+	<body>
+		<script>
+     const product1 = {
+      name: 'basketball',
+       price: 2095 
+      }
+
+      const product2 = {
+        name: 'hoops',
+        price: 1090
+      }
+
+      const product3 = {
+        name: 'basketball',
+        price: 2095
+      };
+
+      console.log(product1);
+
+      product1.price = product1.price + 500;
+
+      console.log(product1.price);
+
+      product1['delivery-time'] = '3 days';
+
+      console.log(product1);
+
+
+      function comparePrice(product1, product2){
+        if (product1.price < product2.price) {
+          return product1
+        } else {
+          return product2
+       }
+      } 
+
+     console.log(comparePrice(product1, product2));
+
+      function isSameProduct(product1, product2){
+        return (product1.name === product2.name && product1.price === product2.price) 
+      }
+        
+
+      console.log(isSameProduct(product1, product2));
+      console.log(isSameProduct(product1, product3));
+      console.log('Good Morning'.toLowerCase())
+      console.log('TASTE TEST'.toLowerCase())
+
+      const repeatedString = 'test'.repeat(2); 
+      console.log(repeatedString);
+
+		</script>
+	</body>
+</html>  

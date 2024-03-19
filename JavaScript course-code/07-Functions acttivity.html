@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+		<head>
+			<title>Functions activity by Slice</title>
+	</head>
+	<body>
+		<script>
+      //7a-7c
+			function greet(name) {
+        console.log(`hello ${name}`)
+        if (!name) {
+          console.log('hi there!')
+        }
+      }
+      greet()
+
+      function convertToFahrenheit (celsius) {
+        console.log(celsius * 9/5 + (32))
+      }
+        convertToFahrenheit(25)
+
+        function convertToCelsius (fahrenheit) {
+          console.log((fahrenheit  -32 ) * 5/9)
+        }
+          convertToCelsius(86)
+
+
+
+
+          function convertToFahrenheit (celsius) {
+        return (celsius * 9/5 + (32))
+      }
+
+      function convertToCelsius (fahrenheit) {
+          return ((fahrenheit  -32 ) * 5/9)
+      }
+
+      function convertTempature(degrees, unit){
+        if (unit === 'C') {
+      
+        const results = convertToCelsius(degrees)
+        return `${results}C`
+
+        } else if (unit === 'F') {
+        const results = convertToFahrenheit(degrees)
+        return `${results}F`
+      }
+    }
+     console.log(convertTempature(86, 'C'))  
+     console.log(convertTempature(25, 'F'))  
+     
+       
+		</script>
+	</body>
+</html>  
